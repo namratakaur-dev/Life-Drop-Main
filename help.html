@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help – LifeDrop</title>
+<meta name="description" content="Pick what's happening. LifeDrop builds the kit.">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=JSON.parse(localStorage.getItem("ld_theme")||'"dark"');if(t!=="dark"){var r=document.documentElement;r.dataset.theme="light";r.dataset.skin=t}}catch(e){}</script>
+</head>
+<body>
+<div class="glow-cursor" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav">
+  <a href="index.html" class="logo"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8 8 5 11 5 15a7 7 0 0014 0c0-4-3-7-7-13z" fill="url(#g)"/><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs></svg>LifeDrop</a>
+  <span class="nav-eta" id="navEta"></span>
+  <button class="cart-btn" id="themeBtn" type="button" aria-label="Switch theme">☀️</button>
+  <button class="cart-btn" id="favBtn" type="button" aria-label="Open favourites">♥<span id="favCount">0</span></button>
+  <a class="cart-btn" id="acctBtn" href="account.html" aria-label="Your account">👤</a>
+  <button class="cart-btn" id="cartBtn" type="button" aria-label="Open cart">🛒<span id="cartCount">0</span></button>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a href="index.html">Home</a><a href="situations.html">Situations</a><a href="shop.html">Shop</a><a href="tracking.html">Tracking</a><a href="rewards.html">Rewards</a><a href="help.html">Help</a>
+    <a href="situations.html" class="btn btn-glow small">Build my kit</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="page-head"><canvas id="particles" aria-hidden="true"></canvas><h1><span class="grad">Help and contact</span></h1><p class="lead">Answers first, then a way to reach us.</p></section>
+<!-- FAQ -->
+<section class="section narrow" id="faq">
+  <h2 class="reveal">Questions, <span class="grad">answered</span></h2>
+  <div class="faq" id="faq-list">
+    <div class="faq-item card glass"><button class="faq-q" aria-expanded="false">How does LifeDrop work?<i></i></button><div class="faq-a"><p>Choose a situation or type what you need. We build a kit, check it against your budget and stock, swap anything unavailable, and give you a delivery estimate. You can edit the cart freely before checkout.</p></div></div>
+    <div class="faq-item card glass"><button class="faq-q" aria-expanded="false">What if an item is out of stock?<i></i></button><div class="faq-a"><p>We suggest a close substitute and show its price. You see every swap in your cart before you pay.</p></div></div>
+    <div class="faq-item card glass"><button class="faq-q" aria-expanded="false">What happens when my situation changes?<i></i></button><div class="faq-a"><p>Tap My Situation Changed. The kit is rebuilt for the new situation with the same budget, and the rest of your cart stays untouched.</p></div></div>
+    <div class="faq-item card glass"><button class="faq-q" aria-expanded="false">Where do you deliver?<i></i></button><div class="faq-a"><p>We currently deliver to PIN codes beginning with 1. You can check yours on the Shop page.</p></div></div>
+    <div class="faq-item card glass"><button class="faq-q" aria-expanded="false">How can I pay?<i></i></button><div class="faq-a"><p>UPI, card or cash on delivery are available at checkout.</p></div></div>
+    <div class="faq-item card glass"><button class="faq-q" aria-expanded="false">What if something arrives damaged?<i></i></button><div class="faq-a"><p>Contact us within 48 hours of delivery and we will arrange a replacement.</p></div></div>
+    <div class="faq-item card glass"><button class="faq-q" aria-expanded="false">Where is my information stored?<i></i></button><div class="faq-a"><p>Your cart, saved items and address are kept on your own device.</p></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section narrow" id="contact">
+  <h2 class="reveal">Say <span class="grad">hello</span></h2>
+  <form class="card neon form reveal" id="form" novalidate>
+    <label for="name">Name</label><input id="name" name="name" autocomplete="name">
+    <small class="err" id="nameErr"></small>
+    <label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email">
+    <small class="err" id="emailErr"></small>
+    <label for="msg">Message</label><textarea id="msg" name="msg" rows="4"></textarea>
+    <small class="err" id="msgErr"></small>
+    <button class="btn btn-glow" type="submit">Send message</button>
+    <p class="form-status" id="status" role="status"></p>
+  </form>
+</section>
+<div class="next-row"><a class="btn btn-glow" href="index.html">Back to home</a></div>
+</main>
+
+<footer class="footer">
+  <div class="foot-grid">
+    <div><a href="index.html" class="logo">LifeDrop</a><p>Shopping that starts with your situation.</p></div>
+    <nav aria-label="Footer"><a href="index.html">Home</a><a href="situations.html">Situations</a><a href="shop.html">Shop</a><a href="tracking.html">Tracking</a><a href="rewards.html">Rewards</a><a href="help.html">Help</a><a href="account.html">Account</a><a href="admin.html">Store admin</a></nav>
+    <nav aria-label="Social"><a href="#" data-social="Instagram">Instagram</a><a href="#" data-social="X">X</a><a href="#" data-social="LinkedIn">LinkedIn</a></nav>
+  </div>
+  <p class="copy">© 2026 LifeDrop. Prototype built for the WEB WEAVERS competition: no payments are processed and orders are not delivered.</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your cart">
+  <div class="drawer-head"><h3>Your cart</h3><button class="icon-btn" id="closeCart" type="button" aria-label="Close cart">✕</button></div>
+  <ul class="cart-list" id="cartList"></ul>
+  <div class="cart-foot">
+    <div class="row"><label for="cartBudget">Budget</label><input id="cartBudget" type="number" min="50" step="10" placeholder="Max spend ₹"><button id="rescueBtn" class="btn btn-ghost small" type="button">Budget Rescue</button></div>
+    <div class="row"><label for="coupon">Coupon</label><input id="coupon" placeholder="LIFE10 or FREEDEL"><button id="couponBtn" class="btn btn-ghost small" type="button">Apply</button></div>
+    <p class="hint" id="cartNote"></p>
+    <div class="free-bar"><div class="fb"><i id="fbFill"></i></div><p id="fbText"></p></div>
+    <dl class="sum"><dt>Subtotal</dt><dd id="sSub">₹0</dd><dt>Discount</dt><dd id="sDisc">₹0</dd><dt>You save</dt><dd id="sSave">₹0</dd><dt>Delivery</dt><dd id="sDel">₹0</dd><dt class="big">Total</dt><dd class="big" id="sTot">₹0</dd></dl>
+    <p class="hint" id="green"></p>
+    <p class="hint" id="cartEta"></p>
+    <button class="btn btn-glow" id="checkoutBtn" type="button">Checkout</button>
+  </div>
+</aside>
+
+<dialog id="favs" aria-label="Your favourites"><button class="icon-btn close" data-close type="button" aria-label="Close">✕</button><h3>Your favourites</h3><ul class="favlist" id="favList"></ul></dialog>
+
+<dialog id="pdp" aria-label="Product details"><button class="icon-btn close" data-close type="button" aria-label="Close">✕</button><div id="pdpBody"></div></dialog>
+
+<dialog id="co" aria-label="Checkout">
+  <button class="icon-btn close" data-close type="button" aria-label="Close">✕</button>
+  <form id="coForm" class="form" novalidate>
+    <ol class="steps-bar" id="coSteps"><li class="done">Cart</li><li class="now">Details</li><li>Confirmed</li></ol>
+    <h3>Checkout</h3>
+    <p id="coSummary" class="hint"></p>
+    <ul class="plain sumlist" id="coItems"></ul>
+    <label for="coName">Name</label><input id="coName" autocomplete="name"><small class="err" id="coNameErr"></small>
+    <label for="coPin">PIN code</label><input id="coPin" inputmode="numeric" maxlength="6" autocomplete="postal-code"><small class="err" id="coPinErr"></small>
+    <label for="coAddr">Address</label><textarea id="coAddr" rows="2"></textarea><small class="err" id="coAddrErr"></small>
+    <fieldset class="when"><legend>When should we deliver?</legend>
+      <label class="chk"><input type="radio" name="coWhen" value="now" checked> Deliver now</label>
+      <label class="chk"><input type="radio" name="coWhen" value="later"> Book for a day and time</label></fieldset>
+    <div id="coNow"><label for="coSlot">Delivery speed</label><select id="coSlot"><option>As soon as possible</option><option>Within 1 hour</option></select></div>
+    <div id="coLater" hidden><div class="grid2"><div><label for="coDate">Day / date</label><input type="date" id="coDate"><small class="err" id="coDateErr"></small></div><div><label for="coTime">Time</label><select id="coTime" aria-describedby="coTimeErr"></select><small class="err" id="coTimeErr"></small></div></div></div>
+    <label for="coPay">Payment method</label><select id="coPay"><option>UPI</option><option>Card</option><option>Cash on delivery</option></select>
+    <button class="btn btn-glow" type="submit">Place order</button>
+  </form>
+  <div id="coDone" style="display:none"><div class="check" aria-hidden="true">✓</div><h3>Order placed!</h3><p id="coDoneTxt"></p><p class="hint">Taking you to order tracking…</p></div>
+</dialog>
+
+<nav class="bottom-nav" aria-label="Quick navigation"><a href="index.html"><span aria-hidden="true">🏠</span>Home</a><a href="situations.html"><span aria-hidden="true">✦</span>Kits</a><a href="shop.html"><span aria-hidden="true">🛍️</span>Shop</a><button type="button" id="bnCart"><span aria-hidden="true">🛒</span>Cart <b id="bnCount">0</b></button><a href="account.html"><span aria-hidden="true">👤</span>Account</a></nav>
+<button class="bot-btn" id="botBtn" type="button" aria-label="Open the LifeDrop assistant" aria-expanded="false">💬</button>
+<section class="bot" id="bot" hidden aria-label="LifeDrop assistant"><div class="bot-head"><b>LifeDrop assistant</b><span class="viz" aria-hidden="true"><i></i><i></i><i></i><i></i></span><button class="icon-btn" id="botClose" type="button" aria-label="Close assistant">✕</button></div><div class="bot-log" id="botLog" role="log" aria-live="polite"></div><div class="bot-chips" id="botChips"></div><div class="rec-bar" id="botRec" hidden><span class="rec-dot"></span><span id="botRecTxt">Recording…</span></div><form class="bot-form" id="botForm"><label class="sr" for="botIn">Your message</label><input id="botIn" placeholder="e.g. guests arriving in 20 minutes" autocomplete="off"><button class="icon-btn mic" id="botMic" type="button" aria-label="Record a voice message" title="Record a voice message">🎙️</button><button class="btn btn-glow small" type="submit">Send</button></form></section>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>

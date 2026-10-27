@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopping that starts with your situation – LifeDrop</title>
+<meta name="description" content="Pick what's happening. LifeDrop builds the kit.">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=JSON.parse(localStorage.getItem("ld_theme")||'"dark"');if(t!=="dark"){var r=document.documentElement;r.dataset.theme="light";r.dataset.skin=t}}catch(e){}</script>
+</head>
+<body>
+<div class="glow-cursor" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- NAVIGATION -->
+<header class="nav" id="nav">
+  <a href="index.html" class="logo"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8 8 5 11 5 15a7 7 0 0014 0c0-4-3-7-7-13z" fill="url(#g)"/><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs></svg>LifeDrop</a>
+  <span class="nav-eta" id="navEta"></span>
+  <button class="cart-btn" id="themeBtn" type="button" aria-label="Switch theme">☀️</button>
+  <button class="cart-btn" id="favBtn" type="button" aria-label="Open favourites">♥<span id="favCount">0</span></button>
+  <a class="cart-btn" id="acctBtn" href="account.html" aria-label="Your account">👤</a>
+  <button class="cart-btn" id="cartBtn" type="button" aria-label="Open cart">🛒<span id="cartCount">0</span></button>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+  <nav class="links" id="links">
+    <a href="index.html">Home</a><a href="situations.html">Situations</a><a href="shop.html">Shop</a><a href="tracking.html">Tracking</a><a href="rewards.html">Rewards</a><a href="help.html">Help</a>
+    <a href="situations.html" class="btn btn-glow small">Build my kit</a>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="orb o1"></div><div class="orb o2"></div><canvas id="particles" aria-hidden="true"></canvas>
+  <div class="hero-text">
+    <span class="badge pulse">Life happens. We're ready.</span>
+    <h1>Don't search for products. <span class="grad">Tell us what's happening.</span></h1>
+    <p class="sub">Power cut, surprise guests, heavy rain, a school project due tomorrow. LifeDrop turns the situation into a ready essentials kit, checks stock and budget, swaps what's missing, and estimates delivery.</p>
+    <form class="hero-search" id="heroSearch" role="search"><label class="sr" for="heroQ">What do you need right now?</label><input id="heroQ" placeholder="What do you need right now?" autocomplete="off"><button class="btn btn-glow" type="submit">Search</button></form>
+    <p class="hint need-chips">Try: <a href="shop.html?q=phone%20charger">phone charger</a> <a href="shop.html?q=breakfast%20ingredients">breakfast ingredients</a> <a href="shop.html?q=rainy-day%20essentials">rainy-day essentials</a></p>
+    <p class="hero-meta"><span class="live-dot" aria-hidden="true"></span>Delivering across PIN codes starting with 1, in about <b id="heroEta">20</b> min</p>
+    <p class="tagline">Your situation. Your budget. Your basket.</p>
+    <div class="cta-row">
+      <a href="situations.html" class="btn btn-glow">Build My Kit ↗</a>
+      <a href="shop.html" class="btn btn-ghost">Explore Products</a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="float-card fc1"><b>Power cut</b><span>9 items · 24 min</span></div>
+    <div class="float-card fc2 hot"><b>Situation changed</b><span>Cart rebuilt instantly</span></div>
+    <div class="float-card fc3"><b>Guests in 20 min</b><span>Snacks, drinks, ice</span></div>
+    <div class="layer l1">🔦</div><div class="layer l2">🥤</div><div class="layer l3">☂️</div>
+    <div class="ring"></div>
+  </div>
+</section>
+
+<!-- ANNOUNCEMENT -->
+<div class="banner"><span class="badge new">NEW</span> "My Situation Changed" rebuilds your whole cart in one tap. <a href="situations.html">Try it</a></div>
+
+<section class="cine" id="cine" aria-label="LifeDrop highlights">
+  <div class="cine-slide s1"><h2>Power cut? We have light covered.</h2><p>Torches, lanterns and power banks in one tap.</p><a class="btn btn-glow" href="situations.html?s=Power%20cut">Build my kit ↗</a></div>
+  <div class="cine-slide s2"><h2>Guests in 20 minutes?</h2><p>Snacks, drinks and cups, within your budget.</p><a class="btn btn-glow" href="situations.html?s=Unexpected%20guests">Prepare in a few clicks ↗</a></div>
+  <div class="cine-slide s3"><h2>Rain on the way?</h2><p>Umbrellas, ponchos and towels, ready to go.</p><a class="btn btn-glow" href="situations.html?s=Rain%20emergency">Get weather ready ↗</a></div>
+  <div class="cine-dots"><button type="button" aria-label="Show slide 1"></button><button type="button" aria-label="Show slide 2"></button><button type="button" aria-label="Show slide 3"></button></div>
+</section>
+
+<section class="section" id="what-happened">
+  <h2 class="reveal">What's <span class="grad">happening?</span> <a class="view-all" href="situations.html">View all ↗</a></h2>
+  <div class="tiles">
+    <a class="card neon tile reveal" href="situations.html?s=Power%20cut"><div class="icon">🔦</div><h3>Power Cut</h3><p>Build an emergency kit</p></a>
+    <a class="card neon tile reveal" href="situations.html?s=School%20project%20rescue"><div class="icon">📄</div><h3>Project Due</h3><p>School supplies</p></a>
+    <a class="card neon tile reveal" href="situations.html?s=Unexpected%20guests"><div class="icon">🥳</div><h3>Guests Arriving</h3><p>Snacks and essentials</p></a>
+    <a class="card neon tile reveal" href="#" data-open-budget><div class="icon">₹</div><h3>Budget Rescue</h3><p>Shop within your limit</p></a>
+    <a class="card neon tile reveal" href="situations.html?s=Rain%20emergency"><div class="icon">☂️</div><h3>Rain Incoming</h3><p>Weather essentials</p></a>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <h2 class="reveal">Shop by <span class="grad">category</span></h2>
+  <div class="grid features">
+    <a class="card glass catcard reveal" data-emoji="🛒" style="--c:#22d3ee" href="shop.html?cat=Groceries"><div class="icon">🛒</div><h3>Groceries and Daily Needs</h3><p>Milk, bread, tea, snacks</p><span class="cnt" data-cat="Groceries"></span></a>
+    <a class="card glass catcard reveal" data-emoji="✏️" style="--c:#3b82f6" href="shop.html?cat=School"><div class="icon">✏️</div><h3>School and Office</h3><p>Paper, pens, glue, colours</p><span class="cnt" data-cat="School"></span></a>
+    <a class="card glass catcard reveal" data-emoji="🔦" style="--c:#f472b6" href="shop.html?cat=Emergency"><div class="icon">🔦</div><h3>Emergency Essentials</h3><p>Torches, power banks, water</p><span class="cnt" data-cat="Emergency"></span></a>
+    <a class="card glass catcard reveal" data-emoji="🎈" style="--c:#a855f7" href="shop.html?cat=Celebrations"><div class="icon">🎈</div><h3>Celebrations and Guests</h3><p>Balloons, cups, fruit</p><span class="cnt" data-cat="Celebrations"></span></a>
+    <a class="card glass catcard reveal" data-emoji="☂️" style="--c:#6ee7b7" href="shop.html?cat=Travel"><div class="icon">☂️</div><h3>Weather and Travel</h3><p>Rain gear, bottles, wipes</p><span class="cnt" data-cat="Travel"></span></a>
+    <a class="card glass catcard reveal" data-emoji="🧽" style="--c:#fbbf24" href="shop.html?cat=Home"><div class="icon">🧽</div><h3>Home and Quick Fix</h3><p>Cleaning, bags, towels</p><span class="cnt" data-cat="Home"></span></a>
+  </div>
+</section>
+
+<section class="section" id="bento">
+  <h2 class="reveal">Everything <span class="grad">LifeDrop</span> does</h2>
+  <div class="bento">
+    <a class="bt b-big reveal" href="situations.html"><span class="badge new">SIGNATURE</span><h3>Situation-to-Cart</h3><p>Pick what happened. We build the basket, check stock and budget, and swap anything that is missing.</p></a>
+    <div class="bt b-feat reveal"><span class="sale" id="featOff">SALE</span><div class="fe" aria-hidden="true">🏮</div><h3>Rechargeable lantern</h3><p><b id="featPrice"></b><s id="featMrp"></s></p><button class="btn btn-glow small" id="featAdd" type="button">Add to cart</button></div>
+    <a class="bt b1 reveal" href="situations.html#combo"><h3>Smart Combo Builder</h3><p>Occasion, budget, people</p></a>
+    <a class="bt b2 reveal" href="#" data-open-budget><h3>Budget Rescue</h3><p>Stay within your limit</p></a>
+    <a class="bt b-wide reveal" href="tracking.html"><h3>Live Delivery Tracker</h3><p>Route map, stages and arrival time</p></a>
+    <a class="bt b3 reveal" href="shop.html?q=phone%20charger"><h3>Need-It-Now Search</h3><p>Search by everyday need</p></a>
+    <a class="bt b4 reveal" href="rewards.html"><h3>Savings Wallet</h3><p>Coupons, points and savings</p></a>
+    <a class="bt b5 reveal" href="rewards.html"><h3>EcoDrop</h3><p>Low-packaging picks</p></a>
+  </div>
+</section>
+
+<section class="section" id="popular-now">
+  <h2 class="reveal">Popular <span class="grad">right now</span></h2>
+  <div class="products" id="popular"></div>
+  <div class="next-row" style="padding:20px 0 0"><a class="btn btn-ghost" href="shop.html">See all products</a></div>
+</section>
+
+<section class="section" id="deal-zone">
+  <h2 class="reveal">Quick <span class="grad">Deal Zone</span></h2>
+  <p class="lead reveal">Limited-time prices. <b id="dealTimer"></b></p>
+  <div class="products" id="dealZone"></div>
+</section>
+
+<section class="section narrow" id="surprise">
+  <h2 class="reveal">Daily <span class="grad">Surprise Drop</span></h2>
+  <div class="card neon surprise reveal">
+    <p class="lead" style="margin:0 auto 14px">A new bundle every day. Tap to reveal today's drop.</p>
+    <button class="btn btn-glow" id="dropBtn" type="button">🎁 Reveal today's drop</button>
+    <div id="dropBody" hidden></div>
+  </div>
+</section>
+
+<section class="section" id="city">
+  <h2 class="reveal">The <span class="grad">LifeDrop city</span></h2>
+  <p class="lead reveal">Delivery hubs, homes and live routes. Tap a glowing hotspot to shop that category.</p>
+  <div class="city card glass reveal">
+    <svg viewBox="0 0 800 360" role="img" aria-label="Illustrated LifeDrop city with delivery hubs, homes and routes">
+      <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e1b4b"/><stop offset="1" stop-color="#0e7490"/></linearGradient>
+      <pattern id="win" width="12" height="14" patternUnits="userSpaceOnUse"><rect x="3" y="3" width="5" height="6" fill="#fde68a" opacity=".75"/></pattern></defs>
+      <rect width="800" height="360" fill="url(#sky)"/>
+      <g fill="#0f172a"><rect x="20" y="150" width="70" height="170"/><rect x="100" y="110" width="60" height="210"/><rect x="170" y="170" width="80" height="150"/><rect x="540" y="130" width="70" height="190"/><rect x="620" y="170" width="60" height="150"/><rect x="690" y="100" width="90" height="220"/></g>
+      <g fill="url(#win)"><rect x="20" y="150" width="70" height="170"/><rect x="100" y="110" width="60" height="210"/><rect x="170" y="170" width="80" height="150"/><rect x="540" y="130" width="70" height="190"/><rect x="620" y="170" width="60" height="150"/><rect x="690" y="100" width="90" height="220"/></g>
+      <rect x="0" y="320" width="800" height="40" fill="#111827"/><path d="M0 340H800" stroke="#fbbf24" stroke-dasharray="16 12" opacity=".6"/>
+      <g><rect x="330" y="190" width="140" height="130" rx="8" fill="#1e293b" stroke="#22d3ee" stroke-width="3"/><rect x="395" y="150" width="10" height="42" fill="#22d3ee"/><circle cx="400" cy="146" r="8" fill="#22d3ee"/><text x="400" y="262" font-size="20" font-weight="700" fill="#22d3ee" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif">LifeDrop hub</text></g>
+      <g fill="#f472b6"><polygon points="265,320 265,290 285,272 305,290 305,320"/><polygon points="500,320 500,292 520,274 540,292 540,320" fill="#a855f7"/></g>
+      <path class="city-route" d="M400 320 Q330 300 285 292"/><path class="city-route" d="M400 320 Q470 300 520 294"/><path class="city-route" d="M400 320 Q300 330 125 320"/><path class="city-route" d="M400 320 Q560 332 700 322"/>
+    </svg>
+    <a class="hot" style="left:12%;top:36%" href="shop.html?cat=Groceries"><i>🛒</i><span>Groceries</span></a>
+    <a class="hot" style="left:26%;top:60%" href="shop.html?cat=School"><i>✏️</i><span>School</span></a>
+    <a class="hot" style="left:50%;top:30%" href="shop.html?cat=Emergency"><i>🔦</i><span>Emergency</span></a>
+    <a class="hot" style="left:66%;top:56%" href="shop.html?cat=Celebrations"><i>🎈</i><span>Celebrations</span></a>
+    <a class="hot" style="left:78%;top:34%" href="shop.html?cat=Travel"><i>☂️</i><span>Weather and travel</span></a>
+    <a class="hot" style="left:90%;top:62%" href="shop.html?cat=Home"><i>🧽</i><span>Home</span></a>
+  </div>
+</section>
+
+<section class="section" id="for-you-section">
+  <h2 class="reveal">Pick up <span class="grad">where you left off</span></h2>
+  <div class="card glass for-you reveal" id="forYou"></div>
+</section>
+
+<section class="section" id="assistant">
+  <div class="card neon reveal"><span class="badge new">ASSISTANT</span><h3>LifeDrop Intelligence</h3><p>Tell us your situation, and we'll help you build a smarter basket.</p><p><button class="btn btn-glow" type="button" data-open-bot>Ask LifeDrop</button></p></div>
+</section>
+
+<section class="section" id="explore">
+  <h2 class="reveal">Explore <span class="grad">LifeDrop</span></h2>
+  <div class="grid features">
+    <a class="card neon explore reveal" href="situations.html"><span class="badge hot">START HERE</span><div class="icon">✦</div><h3>Situations</h3><p>Pick what is happening, or just say it, and get an editable kit.</p><span class="go">Open →</span></a>
+    <a class="card neon explore reveal" href="shop.html"><div class="icon">🛒</div><h3>Shop</h3><p>Search, filter, save products and fill your cart.</p><span class="go">Open →</span></a>
+    <a class="card neon explore reveal" href="tracking.html"><div class="icon">⏱</div><h3>Tracking</h3><p>Follow your order from packing to delivery.</p><span class="go">Open →</span></a>
+    <a class="card neon explore reveal" href="help.html"><div class="icon">?</div><h3>Help</h3><p>Answers to common questions and a contact form.</p><span class="go">Open →</span></a>
+  </div>
+</section>
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2 class="reveal">People realise what they need <span class="grad">only when it happens</span></h2>
+  <p class="lead reveal">Normal shopping asks you to know the products first. Real life hands you a situation first. LifeDrop starts where life does.</p>
+  <div class="grid three">
+    <article class="card glass reveal"><h3>Situation first</h3><p>Choose an event, not an aisle. Each situation maps to a curated list of essentials.</p></article>
+    <article class="card glass reveal"><h3>Budget aware</h3><p>Set what you can spend. Optional items drop out first so the essentials always fit.</p></article>
+    <article class="card glass reveal"><h3>Stock aware</h3><p>Out of an item? A close substitute is offered, with the price difference shown.</p></article>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <h2 class="reveal">Built for the <span class="grad">next 20 minutes</span></h2>
+  <div class="grid features">
+    <article class="card neon featured reveal"><span class="badge hot">FEATURED</span><div class="icon">⟳</div><h3>My Situation Changed</h3><p>Switch from Power Cut to Unexpected Guests and the cart rebuilds itself, keeping your budget.</p></article>
+    <article class="card neon reveal"><div class="icon">✦</div><h3>Instant kits</h3><p>Ready-made lists for seven common situations.</p></article>
+    <article class="card neon reveal"><div class="icon">₹</div><h3>Budget fit</h3><p>Essentials are protected; extras are trimmed to fit.</p></article>
+    <article class="card neon reveal"><div class="icon">⇄</div><h3>Smart swaps</h3><p>Unavailable items get a substitute automatically.</p></article>
+    <article class="card neon reveal"><div class="icon">⏱</div><h3>Delivery window</h3><p>An estimate based on kit size and stock.</p></article>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <h2 class="reveal">Four steps. <span class="grad">No browsing.</span></h2>
+  <ol class="steps">
+    <li class="card glass reveal"><span class="num">1</span><h3>Pick a situation</h3><p>Tap what is happening right now.</p></li>
+    <li class="card glass reveal"><span class="num">2</span><h3>Set a budget</h3><p>Slide to what you want to spend.</p></li>
+    <li class="card glass reveal"><span class="num">3</span><h3>Review the kit</h3><p>See stock, swaps and the total.</p></li>
+    <li class="card glass reveal"><span class="num">4</span><h3>Get a delivery estimate</h3><p>Know when it would arrive.</p></li>
+  </ol>
+</section>
+
+<!-- STATS -->
+<section class="section" id="stats">
+  <div class="grid four">
+    <div class="card stat glass reveal"><strong data-count="7">0</strong><span>situation kits</span></div>
+    <div class="card stat glass reveal"><strong data-count="39">0</strong><span>products</span></div>
+    <div class="card stat glass reveal"><strong data-count="6">0</strong><span>shop categories</span></div>
+    <div class="card stat hotbox reveal"><strong data-count="1">0</strong><span>tap to rebuild your cart</span></div>
+  </div>
+</section>
+
+<!-- STORIES -->
+<section class="section" id="stories">
+  <h2 class="reveal">Made for <span class="grad">moments like these</span></h2>
+  <div class="grid three">
+    <article class="card glass reveal"><h3>The lights go out</h3><p>A torch, power bank, candles and water, in one tap and within your budget.</p></article>
+    <article class="card glass featured-quote reveal"><h3>Guests are 20 minutes away</h3><p>Snacks, drinks and serving essentials, with substitutes if something is sold out.</p></article>
+    <article class="card glass reveal"><h3>The rain starts, the project is due</h3><p>Switch situations and your cart rebuilds without losing the rest of your list.</p></article>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-grid">
+    <div><a href="index.html" class="logo">LifeDrop</a><p>Shopping that starts with your situation.</p></div>
+    <nav aria-label="Footer"><a href="index.html">Home</a><a href="situations.html">Situations</a><a href="shop.html">Shop</a><a href="tracking.html">Tracking</a><a href="rewards.html">Rewards</a><a href="help.html">Help</a><a href="account.html">Account</a><a href="admin.html">Store admin</a></nav>
+    <nav aria-label="Social"><a href="#" data-social="Instagram">Instagram</a><a href="#" data-social="X">X</a><a href="#" data-social="LinkedIn">LinkedIn</a></nav>
+  </div>
+  <p class="copy">© 2026 LifeDrop. Prototype built for the WEB WEAVERS competition: no payments are processed and orders are not delivered.</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your cart">
+  <div class="drawer-head"><h3>Your cart</h3><button class="icon-btn" id="closeCart" type="button" aria-label="Close cart">✕</button></div>
+  <ul class="cart-list" id="cartList"></ul>
+  <div class="cart-foot">
+    <div class="row"><label for="cartBudget">Budget</label><input id="cartBudget" type="number" min="50" step="10" placeholder="Max spend ₹"><button id="rescueBtn" class="btn btn-ghost small" type="button">Budget Rescue</button></div>
+    <div class="row"><label for="coupon">Coupon</label><input id="coupon" placeholder="LIFE10 or FREEDEL"><button id="couponBtn" class="btn btn-ghost small" type="button">Apply</button></div>
+    <p class="hint" id="cartNote"></p>
+    <div class="free-bar"><div class="fb"><i id="fbFill"></i></div><p id="fbText"></p></div>
+    <dl class="sum"><dt>Subtotal</dt><dd id="sSub">₹0</dd><dt>Discount</dt><dd id="sDisc">₹0</dd><dt>You save</dt><dd id="sSave">₹0</dd><dt>Delivery</dt><dd id="sDel">₹0</dd><dt class="big">Total</dt><dd class="big" id="sTot">₹0</dd></dl>
+    <p class="hint" id="green"></p>
+    <p class="hint" id="cartEta"></p>
+    <button class="btn btn-glow" id="checkoutBtn" type="button">Checkout</button>
+  </div>
+</aside>
+
+<dialog id="favs" aria-label="Your favourites"><button class="icon-btn close" data-close type="button" aria-label="Close">✕</button><h3>Your favourites</h3><ul class="favlist" id="favList"></ul></dialog>
+
+<dialog id="pdp" aria-label="Product details"><button class="icon-btn close" data-close type="button" aria-label="Close">✕</button><div id="pdpBody"></div></dialog>
+
+<dialog id="co" aria-label="Checkout">
+  <button class="icon-btn close" data-close type="button" aria-label="Close">✕</button>
+  <form id="coForm" class="form" novalidate>
+    <ol class="steps-bar" id="coSteps"><li class="done">Cart</li><li class="now">Details</li><li>Confirmed</li></ol>
+    <h3>Checkout</h3>
+    <p id="coSummary" class="hint"></p>
+    <ul class="plain sumlist" id="coItems"></ul>
+    <label for="coName">Name</label><input id="coName" autocomplete="name"><small class="err" id="coNameErr"></small>
+    <label for="coPin">PIN code</label><input id="coPin" inputmode="numeric" maxlength="6" autocomplete="postal-code"><small class="err" id="coPinErr"></small>
+    <label for="coAddr">Address</label><textarea id="coAddr" rows="2"></textarea><small class="err" id="coAddrErr"></small>
+    <fieldset class="when"><legend>When should we deliver?</legend>
+      <label class="chk"><input type="radio" name="coWhen" value="now" checked> Deliver now</label>
+      <label class="chk"><input type="radio" name="coWhen" value="later"> Book for a day and time</label></fieldset>
+    <div id="coNow"><label for="coSlot">Delivery speed</label><select id="coSlot"><option>As soon as possible</option><option>Within 1 hour</option></select></div>
+    <div id="coLater" hidden><div class="grid2"><div><label for="coDate">Day / date</label><input type="date" id="coDate"><small class="err" id="coDateErr"></small></div><div><label for="coTime">Time</label><select id="coTime" aria-describedby="coTimeErr"></select><small class="err" id="coTimeErr"></small></div></div></div>
+    <label for="coPay">Payment method</label><select id="coPay"><option>UPI</option><option>Card</option><option>Cash on delivery</option></select>
+    <button class="btn btn-glow" type="submit">Place order</button>
+  </form>
+  <div id="coDone" style="display:none"><div class="check" aria-hidden="true">✓</div><h3>Order placed!</h3><p id="coDoneTxt"></p><p class="hint">Taking you to order tracking…</p></div>
+</dialog>
+
+<nav class="bottom-nav" aria-label="Quick navigation"><a href="index.html"><span aria-hidden="true">🏠</span>Home</a><a href="situations.html"><span aria-hidden="true">✦</span>Kits</a><a href="shop.html"><span aria-hidden="true">🛍️</span>Shop</a><button type="button" id="bnCart"><span aria-hidden="true">🛒</span>Cart <b id="bnCount">0</b></button><a href="account.html"><span aria-hidden="true">👤</span>Account</a></nav>
+<button class="bot-btn" id="botBtn" type="button" aria-label="Open the LifeDrop assistant" aria-expanded="false">💬</button>
+<section class="bot" id="bot" hidden aria-label="LifeDrop assistant"><div class="bot-head"><b>LifeDrop assistant</b><span class="viz" aria-hidden="true"><i></i><i></i><i></i><i></i></span><button class="icon-btn" id="botClose" type="button" aria-label="Close assistant">✕</button></div><div class="bot-log" id="botLog" role="log" aria-live="polite"></div><div class="bot-chips" id="botChips"></div><div class="rec-bar" id="botRec" hidden><span class="rec-dot"></span><span id="botRecTxt">Recording…</span></div><form class="bot-form" id="botForm"><label class="sr" for="botIn">Your message</label><input id="botIn" placeholder="e.g. guests arriving in 20 minutes" autocomplete="off"><button class="icon-btn mic" id="botMic" type="button" aria-label="Record a voice message" title="Record a voice message">🎙️</button><button class="btn btn-glow small" type="submit">Send</button></form></section>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
